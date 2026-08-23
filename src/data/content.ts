@@ -5,8 +5,8 @@ export const HERO_DATA = {
   title: "THE WORLD OF ANA",
   subtitle: "Curated Lifestyle | Travel | Style",
   tagline: "A refined narrative of effortless elegance, quiet luxury, and architectural aesthetics.",
-  // Primary hero image placeholder URL
-  heroImageUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=2000",
+  // Primary hero image URL
+  heroImageUrl: "/images/ana1.jpg",
   videoBgUrl: "https://assets.mixkit.co/videos/preview/mixkit-fashion-model-posing-in-a-black-outfit-41318-large.mp4",
 };
 

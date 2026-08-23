@@ -54,9 +54,13 @@ export const Hero: React.FC = () => {
             {/* <!-- REPLACE WITH ANA'S ACTUAL PHOTO --> */}
             <img
               src={HERO_DATA.heroImageUrl}
-              alt="Ana - Luxury Lifestyle Portrait"
-              className="w-full h-full object-cover object-center opacity-85 filter contrast-[1.02] hover:scale-105 transition-transform duration-700"
+              alt="Ana Lifestyle"
+              className="w-full h-full object-cover object-center opacity-90 filter contrast-[1.02] hover:scale-105 transition-transform duration-700"
               loading="eager"
+              onError={(e) => {
+                // Fallback to online image if local file fails to load
+                e.currentTarget.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=1200";
+              }}
             />
             {/* Location Badge */}
             <div className="absolute bottom-8 left-8 text-white z-10 bg-black/40 backdrop-blur-md p-4 border border-white/10 rounded-xs">
